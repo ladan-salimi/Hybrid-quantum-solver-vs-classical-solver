@@ -1,4 +1,4 @@
 # Hybrid-quantum-solver-vs-classical-solver
 Here is a quadratic optimization problem featuring binary decision variables. We conducted several runtime analyses for varying numbers of decision variables. For quantum solving, we utilized the 'LeapHybridCQMSampler,' and For classical solving, we utilized the CPLEX in qiskit. Our results demonstrate that hybrid quantum solvers exhibit a constant trend, whereas CPLEX becomes unresponsive for higher numbers of decision variables. We have attached a graph displaying the different runtimes. ([Image URL](https://github.com/ladan-salimi/Hybrid-quantum-solver-vs-classical-solver/blob/main/Quantum-Cplex.png
-))
+)).
 Classical solvers can solve small-scale problems quickly, but the time it takes for classical solvers grows exponentially when it comes to larger scales. This is because classical computers must consider every possible factor individually until they find the correct answer. In contrast, quantum computers can solve large problems faster than classical computers. This is due to quantum mechanic laws that use the superposition and entanglement properties of qubits to perform multiple calculations at once.
