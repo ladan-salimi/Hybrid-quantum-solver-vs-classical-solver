@@ -3,7 +3,6 @@ from dwave.system import LeapHybridCQMSampler
 import timeit
 import numpy as np
 #%%
-start = timeit.default_timer()
 #Construct a problem: Of and Constraints:
 def create_problem(mu,sigma):
 
@@ -20,13 +19,12 @@ mu = np.random.rand(N,)
 sigma = np.random.rand(N,N)
 qubo_1 = create_problem(mu, sigma)
 print(qubo_1)
-#%%constructing the CQM model 
+#%%construct the CQM model 
 start = timeit.default_timer()
 cqm = ConstrainedQuadraticModel()
 cqm.set_objective((qubo_1))
 cqm.add_constraint(sum([Binary("x%s" % i) for i in range(len(sigma))])== 4, "constraint1")
 print(cqm)
-
 #%%HybridSolver
 sampler = LeapHybridCQMSampler() 
 sampleset = sampler.sample_cqm(cqm)
