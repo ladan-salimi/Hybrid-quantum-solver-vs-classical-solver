@@ -1,7 +1,7 @@
 # Hybrid Quantum vs Classical Optimization
 
 ## Overview
-This repository contains an implementation of a hybrid quantum-classical and a purely classical approach to solving an optimization problem. The quantum approach leverages D-Wave's Leap Hybrid Constrained Quadratic Model (CQM) Sampler, while the classical approach utilizes IBM Qiskit's `CplexOptimizer` for solving Quadratic Programming problems. A performance comparison is provided.
+This repository implements a hybrid quantum-classical and a purely classical approach to solving an optimization problem. The quantum approach leverages D-Wave's Leap Hybrid Constrained Quadratic Model (CQM) Sampler, while the classical approach utilizes IBM Qiskit's `CplexOptimizer` for solving Quadratic Programming problems. A performance comparison is provided.
 
 ## Repository Contents
 - **`Hybrid_quantum.py`**: Main script that formulates and solves the problem using a hybrid quantum-classical approach.
